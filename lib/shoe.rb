@@ -8,7 +8,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     FILTER << brand
-    BRANDS << FILTER.uniq
+    BRANDS << FILTER
   end
 
   def cobble
