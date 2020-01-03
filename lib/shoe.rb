@@ -6,8 +6,8 @@ class Shoe
   FILTER =[]
   
   def initialize(brand)
-    @brand = brand.uniq!
-    BRANDS << brand
+    @brand = brand
+    BRANDS.uniq! << brand
     
   end
 
