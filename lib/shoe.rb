@@ -3,16 +3,18 @@ class Shoe
   attr_reader :brand
 
   BRANDS =[]
+  FILTER =[]
   
   def initialize(brand)
     @brand = brand
-    BRANDS.uniq! << brand
+    FILTER << brand
+    BRANDS << FILTER.uniq!
   end
 
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-  
+   
 
 end
