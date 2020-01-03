@@ -14,7 +14,5 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
   
-  BRANDS << @brand
-  BRANDS = BRANDS.uniq
 
 end
