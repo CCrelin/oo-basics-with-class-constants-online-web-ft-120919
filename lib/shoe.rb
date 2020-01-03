@@ -3,12 +3,10 @@ class Shoe
   attr_reader :brand
 
   BRANDS =[]
-  FILTER =[]
   
   def initialize(brand)
     @brand = brand
-    FILTER << brand
-    BRANDS << FILTER
+    BRANDS << brand
   end
 
   def cobble
